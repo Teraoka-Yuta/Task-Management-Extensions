@@ -1,0 +1,12 @@
+/* style.css */
+body {
+    width: 300px;
+    height: 100px;
+  }
+  
+  #adContainer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
