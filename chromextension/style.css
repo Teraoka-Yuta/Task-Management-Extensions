@@ -1,12 +1,24 @@
 /* style.css */
+@charset "utf-8";
 body {
     width: 300px;
-    height: 100px;
-  }
+    height: 200px;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+}
+
+h1 {
+  color: #326693;			/* 見出しテキストの色を指定する */
+  padding-left:10px;		/* ボックス内左側の余白を指定する */
+  border-left: 10px solid #31a9ee;	/* ボーダー左側のスタイルを指定する */
+  border-bottom: 1px dashed #31a9ee; 	/* ボーダー下部のスタイルを指定する */
+}
   
-  #adContainer {
-    background-color: #f0f0f0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  }
+#adContainer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
