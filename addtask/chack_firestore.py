@@ -15,4 +15,4 @@ docs = ref.stream()
 for doc in docs:
     print(u'{} => {}'.format(doc.id, doc.to_dict()))
 
-db.collection("task").add({"userid": 1103854, "level": 5, "deadline":"2024/1/10" , "name": "映像メディア処理"})
+db.collection("task").add({"userid": 1103854, "level": 5, "deadline":"20240110" , "name": "映像メディア処理"})
