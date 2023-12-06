@@ -10,4 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
       var content = this.value;
       chrome.storage.sync.set({ 'content': content });
     });
+
+    document.getElementById("task_1").textContent = "task"
   });
