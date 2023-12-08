@@ -5,8 +5,8 @@
 2. チェックボックスで終了したタスクを非表示にする<br>
 3. 追加ボタンでaddtaskのウェブサイトに移動する<br>
 
-##データの管理はFirebaseとchrome.storage.syncの両方で管理
-###Firebase
+## データの管理はFirebaseとchrome.storage.syncの両方で管理
+### Firebase
 全体に公開されるタスクを保存する
-###chrome.storage.sync
+### chrome.storage.sync
 非公開の自分だけ見られるタスクを管理する
