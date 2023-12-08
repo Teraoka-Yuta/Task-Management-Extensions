@@ -5,7 +5,7 @@
     "manifest_version": 2,
     "description": "タスク管理を行う拡張機能",
     "browser_action":{
-        "default_popup": "popuptask.html"
+        "default_popup": "setFirestore.html"
     },
 
     "permissions": [
