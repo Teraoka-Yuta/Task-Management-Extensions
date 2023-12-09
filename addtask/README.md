@@ -27,8 +27,11 @@ htmlから以下が与えられる
 2. 期限 : deadline
 3. 難度 : level
 4. 名前又はid (学籍番号などを想定) : id
+5. 学科：grade
+6. 学年：year
 ### 出力
-公開で追加ボタン(id="addOpen")を押すとFirestoreに
+
+~~公開で追加ボタン(id="addOpen")を押すとFirestoreに~~
 ~~非公開で追加ボタン(id="addClose))を押すとchrome.storage.syncにデータを追加する~~
-localstrageはセキュリティ的に問題ありそうなため廃止
 Firestoreでデータ管理を行う。
+拡張機能としてではなくFirestoreにデータを追加するhtmlを作成し、サーバを立てる
