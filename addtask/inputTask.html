@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Content Editor</title>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="popup.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <h1>タスク管理を行うメモ欄</h1>
+    <br>
+    <p>課題名</p>
+    <input  id="contentArea">課題名</input>
+    <p>期限</p>
+    <input type="date" id="deadline">期限</input>
+    <p>難易度</p>
+    <select id="level">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+    </select>
+    <p>id (半角数字で作成してください 例:学籍番号)</p>
+    <input type="number" id="id">id (半角数字で作成してください 例:学籍番号)</input>
+    <select id="grade">
+        <option>EM</option>
+        <option>EA</option>
+        <option>ER</option>
+        <option>EL</option>
+        <option>EP</option>
+        <option>EV</option>
+        <option>FM</option>
+        <option>FS</option>
+        <option>FY</option>
+        <option>EL</option>
+        <option>AA</option>
+        <option>BB</option>
+        <option>BC</option>
+    </select>
+    <select id="year">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+    </br>
+    <button id="add">追加</button>
+    
+</body>
+</html>
