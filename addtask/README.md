@@ -29,6 +29,5 @@ htmlから以下が与えられる
 4. 名前又はid (学籍番号などを想定) : id
 ### 出力
 公開で追加ボタン(id="addOpen")を押すとFirestoreに
-~~非公開で追加ボタン(id="addClose))を押すとchrome.storage.syncにデータを追加する~~
-localstrageはセキュリティ的に問題ありそうなため廃止
-Firestoreでデータ管理を行う。
+非公開で追加ボタン(id="addClose))を押すとchrome.storage.syncにデータを追加する
+~~Firebase出のデータ管理が分からないためlocalでデータを管理する~~

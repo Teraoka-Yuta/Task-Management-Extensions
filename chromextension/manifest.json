@@ -2,10 +2,10 @@
     "name": "Task Management Extension",
     "short_name": "Task Mng",
     "version": "1.0.0",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "description": "タスク管理を行う拡張機能",
-    "browser_action":{
-        "default_popup": "setFirestore.html"
+    "action":{
+        "default_popup": "popup.html"
     },
 
     "permissions": [
