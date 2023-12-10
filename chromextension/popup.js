@@ -27,7 +27,7 @@ const firebaseConfig = {
 
 
 // Firestoreからデータを取得
-var collectionRef = db.collection("your-collection-name");
+var collectionRef = db.collection("task");
 
 collectionRef.get().then((querySnapshot) => {
   querySnapshot.forEach((doc) => {

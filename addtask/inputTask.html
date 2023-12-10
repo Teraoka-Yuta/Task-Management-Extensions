@@ -1,21 +1,44 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Content Editor</title>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
-    <script src="popup.js"></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+    <script>
+       const firebaseConfig = {
+        apiKey: "AIzaSyCR6Qww8456rfhLU-cOJEHpiPpj7u1gmFE",
+        authDomain: "task-management-extension.firebaseapp.com",
+        projectId: "task-management-extension",
+        storageBucket: "task-management-extension.appspot.com",
+        messagingSenderId: "1054215485645",
+        appId: "1:1054215485645:web:c9e622d7615154aea19184",
+        measurementId: "G-4L91RB0YDD"
+      };
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script language="javascript" type="text/javascript">
+        function OnButtonClick() {
+            //ここに値を追加する処理を書く
+            target = document.getElementById("task1");
+            target.innerHTML = "Penguin";
+        }
+    </script>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <h1>タスク管理を行うメモ欄</h1>
+    <h1>課題を追加</h1>
     <br>
-    <p>課題名</p>
+    <p id="task1"></p>
     <input  id="contentArea">課題名</input>
-    <p>期限</p>
-    <input type="date" id="deadline">期限</input>
-    <p>難易度</p>
+    <input type="number" id="deadline">期限</input>
     <select id="level">
         <option>1</option>
         <option>2</option>
@@ -31,6 +54,7 @@
     <p>id (半角数字で作成してください 例:学籍番号)</p>
     <input type="number" id="id">id (半角数字で作成してください 例:学籍番号)</input>
     <select id="grade">
+        <option>学科を入力</option>
         <option>EM</option>
         <option>EA</option>
         <option>ER</option>
@@ -46,13 +70,14 @@
         <option>BC</option>
     </select>
     <select id="year">
+        <option>学年</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
     </select>
     </br>
-    <button id="add">追加</button>
+    <button id="add" onclick='OnButtonClick()'>追加</button>
     
 </body>
 </html>
